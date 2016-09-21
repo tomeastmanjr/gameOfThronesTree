@@ -9,6 +9,8 @@
 import UIKit
 
 class HouseDetailsViewController: UIViewController {
+    
+    var house : House?
 
     override func viewDidLoad() {
         super.viewDidLoad()

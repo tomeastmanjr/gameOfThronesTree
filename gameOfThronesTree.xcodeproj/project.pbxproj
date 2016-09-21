@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72260C2A1D931FBA00943C93 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72260C291D931FBA00943C93 /* House.swift */; };
+		72260C2C1D932A7200943C93 /* HouseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72260C2B1D932A7200943C93 /* HouseCell.swift */; };
 		C11573F61D92FB9700904B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11573F51D92FB9700904B52 /* AppDelegate.swift */; };
 		C11573F81D92FB9700904B52 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11573F71D92FB9700904B52 /* HomeViewController.swift */; };
 		C11573FB1D92FB9700904B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11573F91D92FB9700904B52 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72260C291D931FBA00943C93 /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		72260C2B1D932A7200943C93 /* HouseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseCell.swift; sourceTree = "<group>"; };
 		C11573F21D92FB9700904B52 /* gameOfThronesTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gameOfThronesTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11573F51D92FB9700904B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C11573F71D92FB9700904B52 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -124,21 +128,27 @@
 				C11573F51D92FB9700904B52 /* AppDelegate.swift */,
 				C11573F71D92FB9700904B52 /* HomeViewController.swift */,
 				C11573F91D92FB9700904B52 /* Main.storyboard */,
+
 				C11574381D932EA800904B52 /* game-of-thrones-houses.jpg */,
 				C11574321D932BAF00904B52 /* Game_of_Thrones_title_card_med.jpg */,
 				C11574331D932BAF00904B52 /* Game_of_Thrones_title_card_small.jpg */,
 				C11574341D932BAF00904B52 /* GameofThrones_byWar36.png */,
 				C11574301D93287900904B52 /* Game_of_Thrones_2011_logo.svg.png */,
 				C115742E1D93002700904B52 /* HouseDetailsViewController.swift */,
+
 				C115742C1D92FFCB00904B52 /* AdvancedSearchViewController.swift */,
 				C115742A1D92FF5C00904B52 /* CharacterDetailsViewController.swift */,
-				C11574281D92FF0700904B52 /* HousesCollectionViewController.swift */,
 				C11574261D92FE7100904B52 /* IntroViewController.swift */,
+				C11574281D92FF0700904B52 /* HousesCollectionViewController.swift */,
+				C115742E1D93002700904B52 /* HouseDetailsViewController.swift */,
+				72260C291D931FBA00943C93 /* House.swift */,
 				C11573FF1D92FB9700904B52 /* Assets.xcassets */,
 				C11574011D92FB9700904B52 /* LaunchScreen.storyboard */,
 				C11574041D92FB9700904B52 /* Info.plist */,
 				C11573FC1D92FB9700904B52 /* gameOfThronesTree.xcdatamodeld */,
+
 				F61C9A1C1D9320AC00B35594 /* CharacterModel.swift */,
+				72260C2B1D932A7200943C93 /* HouseCell.swift */,
 			);
 			path = gameOfThronesTree;
 			sourceTree = "<group>";
@@ -307,10 +317,12 @@
 				C115742D1D92FFCB00904B52 /* AdvancedSearchViewController.swift in Sources */,
 				C11573F81D92FB9700904B52 /* HomeViewController.swift in Sources */,
 				C11574291D92FF0700904B52 /* HousesCollectionViewController.swift in Sources */,
+				72260C2A1D931FBA00943C93 /* House.swift in Sources */,
 				C11573F61D92FB9700904B52 /* AppDelegate.swift in Sources */,
 				C11573FE1D92FB9700904B52 /* gameOfThronesTree.xcdatamodeld in Sources */,
 				F61C9A1D1D9320AC00B35594 /* CharacterModel.swift in Sources */,
 				C11574271D92FE7100904B52 /* IntroViewController.swift in Sources */,
+				72260C2C1D932A7200943C93 /* HouseCell.swift in Sources */,
 				C115742B1D92FF5C00904B52 /* CharacterDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
