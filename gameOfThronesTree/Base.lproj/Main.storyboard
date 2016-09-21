@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJL-xM-Y6v">
@@ -44,7 +44,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eet-AC-G1F"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uQJ-0i-RWW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTc-BX-SW8">
@@ -75,8 +75,8 @@
         <scene sceneID="JpX-3u-unt">
             <objects>
                 <collectionViewController id="mbW-eE-M7N" customClass="HousesCollectionViewController" customModule="gameOfThronesTree" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="k8p-Fb-a8U">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="k8p-Fb-a8U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lha-Xa-bpJ">
@@ -100,6 +100,9 @@
                             <outlet property="delegate" destination="mbW-eE-M7N" id="b4Q-JK-RKZ"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="ftB-As-sBt" kind="show" identifier="toHouseDetails" id="ai2-9q-VeT"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCI-gm-244" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +117,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VlQ-wU-YzQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="F9k-Hg-z2S">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -132,14 +135,14 @@
                         <viewControllerLayoutGuide type="bottom" id="suw-4I-uaT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NCT-kG-CGE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2A-ip-SwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2372" y="261"/>
+            <point key="canvasLocation" x="2457" y="-66"/>
         </scene>
         <!--Advanced Search View Controller-->
         <scene sceneID="cnM-RN-zIy">
@@ -150,7 +153,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hpz-3m-Y01"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zHV-TT-djP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
