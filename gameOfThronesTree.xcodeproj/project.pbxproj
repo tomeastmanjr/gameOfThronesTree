@@ -27,6 +27,7 @@
 		C11574361D932BAF00904B52 /* Game_of_Thrones_title_card_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C11574331D932BAF00904B52 /* Game_of_Thrones_title_card_small.jpg */; };
 		C11574371D932BAF00904B52 /* GameofThrones_byWar36.png in Resources */ = {isa = PBXBuildFile; fileRef = C11574341D932BAF00904B52 /* GameofThrones_byWar36.png */; };
 		C11574391D932EA800904B52 /* game-of-thrones-houses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C11574381D932EA800904B52 /* game-of-thrones-houses.jpg */; };
+		C115743B1D9348EF00904B52 /* GameOfThronesThemeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C115743A1D9348EF00904B52 /* GameOfThronesThemeSong.mp3 */; };
 		F61C9A1D1D9320AC00B35594 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61C9A1C1D9320AC00B35594 /* CharacterModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		C11574331D932BAF00904B52 /* Game_of_Thrones_title_card_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Game_of_Thrones_title_card_small.jpg; sourceTree = SOURCE_ROOT; };
 		C11574341D932BAF00904B52 /* GameofThrones_byWar36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameofThrones_byWar36.png; sourceTree = SOURCE_ROOT; };
 		C11574381D932EA800904B52 /* game-of-thrones-houses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "game-of-thrones-houses.jpg"; sourceTree = SOURCE_ROOT; };
+		C115743A1D9348EF00904B52 /* GameOfThronesThemeSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GameOfThronesThemeSong.mp3; sourceTree = SOURCE_ROOT; };
 		F61C9A1C1D9320AC00B35594 /* CharacterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,15 +129,12 @@
 			children = (
 				C11573F51D92FB9700904B52 /* AppDelegate.swift */,
 				C11573F71D92FB9700904B52 /* HomeViewController.swift */,
+				C115743A1D9348EF00904B52 /* GameOfThronesThemeSong.mp3 */,
 				C11573F91D92FB9700904B52 /* Main.storyboard */,
-
 				C11574381D932EA800904B52 /* game-of-thrones-houses.jpg */,
 				C11574321D932BAF00904B52 /* Game_of_Thrones_title_card_med.jpg */,
 				C11574331D932BAF00904B52 /* Game_of_Thrones_title_card_small.jpg */,
 				C11574341D932BAF00904B52 /* GameofThrones_byWar36.png */,
-				C11574301D93287900904B52 /* Game_of_Thrones_2011_logo.svg.png */,
-				C115742E1D93002700904B52 /* HouseDetailsViewController.swift */,
-
 				C115742C1D92FFCB00904B52 /* AdvancedSearchViewController.swift */,
 				C115742A1D92FF5C00904B52 /* CharacterDetailsViewController.swift */,
 				C11574261D92FE7100904B52 /* IntroViewController.swift */,
@@ -143,10 +142,10 @@
 				C115742E1D93002700904B52 /* HouseDetailsViewController.swift */,
 				72260C291D931FBA00943C93 /* House.swift */,
 				C11573FF1D92FB9700904B52 /* Assets.xcassets */,
+				C11574301D93287900904B52 /* Game_of_Thrones_2011_logo.svg.png */,
 				C11574011D92FB9700904B52 /* LaunchScreen.storyboard */,
 				C11574041D92FB9700904B52 /* Info.plist */,
 				C11573FC1D92FB9700904B52 /* gameOfThronesTree.xcdatamodeld */,
-
 				F61C9A1C1D9320AC00B35594 /* CharacterModel.swift */,
 				72260C2B1D932A7200943C93 /* HouseCell.swift */,
 			);
@@ -284,6 +283,7 @@
 				C11574351D932BAF00904B52 /* Game_of_Thrones_title_card_med.jpg in Resources */,
 				C11574391D932EA800904B52 /* game-of-thrones-houses.jpg in Resources */,
 				C11574361D932BAF00904B52 /* Game_of_Thrones_title_card_small.jpg in Resources */,
+				C115743B1D9348EF00904B52 /* GameOfThronesThemeSong.mp3 in Resources */,
 				C11574031D92FB9700904B52 /* LaunchScreen.storyboard in Resources */,
 				C11574001D92FB9700904B52 /* Assets.xcassets in Resources */,
 				C11573FB1D92FB9700904B52 /* Main.storyboard in Resources */,
