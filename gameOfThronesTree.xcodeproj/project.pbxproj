@@ -20,6 +20,7 @@
 		C115742B1D92FF5C00904B52 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115742A1D92FF5C00904B52 /* CharacterDetailsViewController.swift */; };
 		C115742D1D92FFCB00904B52 /* AdvancedSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115742C1D92FFCB00904B52 /* AdvancedSearchViewController.swift */; };
 		C115742F1D93002700904B52 /* HouseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115742E1D93002700904B52 /* HouseDetailsViewController.swift */; };
+		F61C9A1D1D9320AC00B35594 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61C9A1C1D9320AC00B35594 /* CharacterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		C115742A1D92FF5C00904B52 /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		C115742C1D92FFCB00904B52 /* AdvancedSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedSearchViewController.swift; sourceTree = "<group>"; };
 		C115742E1D93002700904B52 /* HouseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseDetailsViewController.swift; sourceTree = "<group>"; };
+		F61C9A1C1D9320AC00B35594 /* CharacterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				C11574011D92FB9700904B52 /* LaunchScreen.storyboard */,
 				C11574041D92FB9700904B52 /* Info.plist */,
 				C11573FC1D92FB9700904B52 /* gameOfThronesTree.xcdatamodeld */,
+				F61C9A1C1D9320AC00B35594 /* CharacterModel.swift */,
 			);
 			path = gameOfThronesTree;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				C11574291D92FF0700904B52 /* HousesCollectionViewController.swift in Sources */,
 				C11573F61D92FB9700904B52 /* AppDelegate.swift in Sources */,
 				C11573FE1D92FB9700904B52 /* gameOfThronesTree.xcdatamodeld in Sources */,
+				F61C9A1D1D9320AC00B35594 /* CharacterModel.swift in Sources */,
 				C11574271D92FE7100904B52 /* IntroViewController.swift in Sources */,
 				C115742B1D92FF5C00904B52 /* CharacterDetailsViewController.swift in Sources */,
 			);
@@ -538,6 +542,7 @@
 				C115741F1D92FB9700904B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C11574201D92FB9700904B52 /* Build configuration list for PBXNativeTarget "gameOfThronesTreeTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +551,7 @@
 				C11574221D92FB9700904B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C11574231D92FB9700904B52 /* Build configuration list for PBXNativeTarget "gameOfThronesTreeUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +560,7 @@
 				C11574251D92FB9700904B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
