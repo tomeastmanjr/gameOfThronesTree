@@ -138,6 +138,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzE-td-NQv">
                                                 <state key="normal" title="Take me to Random Char Button"/>
+                                                <connections>
+                                                    <segue destination="IXS-WF-r6T" kind="show" identifier="CharacterDetails" id="rSY-yp-bI4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -192,7 +195,7 @@
             <objects>
                 <collectionViewController id="mbW-eE-M7N" customClass="HousesCollectionViewController" customModule="gameOfThronesTree" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="k8p-Fb-a8U">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lha-Xa-bpJ">
@@ -378,6 +381,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JfU-ZF-lM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="956" y="794"/>
+        </scene>
+        <!--Character Details View Controller-->
+        <scene sceneID="7hR-C0-gkH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhT-n0-08s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="IXS-WF-r6T" customClass="CharacterDetailsViewController" customModule="gameOfThronesTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IqD-NN-7Bq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharCell" id="y8y-h6-mxc">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y8y-h6-mxc" id="wb3-XY-kyL">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="IXS-WF-r6T" id="CLv-qH-1QQ"/>
+                            <outlet property="delegate" destination="IXS-WF-r6T" id="fnO-9B-p0E"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1662" y="645"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ekd-dc-Bod">
