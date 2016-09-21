@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		C11573F61D92FB9700904B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11573F51D92FB9700904B52 /* AppDelegate.swift */; };
-		C11573F81D92FB9700904B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11573F71D92FB9700904B52 /* ViewController.swift */; };
+		C11573F81D92FB9700904B52 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11573F71D92FB9700904B52 /* HomeViewController.swift */; };
 		C11573FB1D92FB9700904B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11573F91D92FB9700904B52 /* Main.storyboard */; };
 		C11573FE1D92FB9700904B52 /* gameOfThronesTree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C11573FC1D92FB9700904B52 /* gameOfThronesTree.xcdatamodeld */; };
 		C11574001D92FB9700904B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11573FF1D92FB9700904B52 /* Assets.xcassets */; };
 		C11574031D92FB9700904B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11574011D92FB9700904B52 /* LaunchScreen.storyboard */; };
 		C115740E1D92FB9700904B52 /* gameOfThronesTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115740D1D92FB9700904B52 /* gameOfThronesTreeTests.swift */; };
 		C11574191D92FB9700904B52 /* gameOfThronesTreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11574181D92FB9700904B52 /* gameOfThronesTreeUITests.swift */; };
+		C11574271D92FE7100904B52 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11574261D92FE7100904B52 /* IntroViewController.swift */; };
+		C11574291D92FF0700904B52 /* HousesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11574281D92FF0700904B52 /* HousesCollectionViewController.swift */; };
+		C115742B1D92FF5C00904B52 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115742A1D92FF5C00904B52 /* CharacterDetailsViewController.swift */; };
+		C115742D1D92FFCB00904B52 /* AdvancedSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115742C1D92FFCB00904B52 /* AdvancedSearchViewController.swift */; };
+		C115742F1D93002700904B52 /* HouseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115742E1D93002700904B52 /* HouseDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,7 @@
 /* Begin PBXFileReference section */
 		C11573F21D92FB9700904B52 /* gameOfThronesTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gameOfThronesTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11573F51D92FB9700904B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C11573F71D92FB9700904B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C11573F71D92FB9700904B52 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C11573FA1D92FB9700904B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C11573FD1D92FB9700904B52 /* gameOfThronesTree.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gameOfThronesTree.xcdatamodel; sourceTree = "<group>"; };
 		C11573FF1D92FB9700904B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		C11574141D92FB9700904B52 /* gameOfThronesTreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gameOfThronesTreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11574181D92FB9700904B52 /* gameOfThronesTreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameOfThronesTreeUITests.swift; sourceTree = "<group>"; };
 		C115741A1D92FB9700904B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11574261D92FE7100904B52 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		C11574281D92FF0700904B52 /* HousesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesCollectionViewController.swift; sourceTree = "<group>"; };
+		C115742A1D92FF5C00904B52 /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
+		C115742C1D92FFCB00904B52 /* AdvancedSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedSearchViewController.swift; sourceTree = "<group>"; };
+		C115742E1D93002700904B52 /* HouseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +110,13 @@
 			isa = PBXGroup;
 			children = (
 				C11573F51D92FB9700904B52 /* AppDelegate.swift */,
-				C11573F71D92FB9700904B52 /* ViewController.swift */,
+				C11573F71D92FB9700904B52 /* HomeViewController.swift */,
 				C11573F91D92FB9700904B52 /* Main.storyboard */,
+				C115742E1D93002700904B52 /* HouseDetailsViewController.swift */,
+				C115742C1D92FFCB00904B52 /* AdvancedSearchViewController.swift */,
+				C115742A1D92FF5C00904B52 /* CharacterDetailsViewController.swift */,
+				C11574281D92FF0700904B52 /* HousesCollectionViewController.swift */,
+				C11574261D92FE7100904B52 /* IntroViewController.swift */,
 				C11573FF1D92FB9700904B52 /* Assets.xcassets */,
 				C11574011D92FB9700904B52 /* LaunchScreen.storyboard */,
 				C11574041D92FB9700904B52 /* Info.plist */,
@@ -265,9 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C11573F81D92FB9700904B52 /* ViewController.swift in Sources */,
+				C115742F1D93002700904B52 /* HouseDetailsViewController.swift in Sources */,
+				C115742D1D92FFCB00904B52 /* AdvancedSearchViewController.swift in Sources */,
+				C11573F81D92FB9700904B52 /* HomeViewController.swift in Sources */,
+				C11574291D92FF0700904B52 /* HousesCollectionViewController.swift in Sources */,
 				C11573F61D92FB9700904B52 /* AppDelegate.swift in Sources */,
 				C11573FE1D92FB9700904B52 /* gameOfThronesTree.xcdatamodeld in Sources */,
+				C11574271D92FE7100904B52 /* IntroViewController.swift in Sources */,
+				C115742B1D92FF5C00904B52 /* CharacterDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
