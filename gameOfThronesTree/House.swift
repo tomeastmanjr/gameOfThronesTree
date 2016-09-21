@@ -36,10 +36,11 @@ class House {
     
     static func getAllHouses(completionHandler : @escaping (_ houses : [House]) -> () ){
         var outHouses = [House]()
+        func handleURL(url: String){
             print("executing JSON requests")
             let url = NSURL(string: "http://www.anapioficeandfire.com/api/houses")
             let session = URLSession.shared // Create an NSURLSession to handle the request tasks
-            let task = session.dataTask(with: url! as URL, completionHandler: {//request data from a URL, requires a completion handler
+            let task = session.dataTask(with: url! as URL, completionHandler: {
                 data, response, error in
                 do {
                     if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray {
@@ -55,14 +56,22 @@ class House {
                             print("Appending house: \(h.name)")
                             outHouses.append(h)
                         }
-                        print("Current houses: \(outHouses)")
-                        completionHandler(outHouses)
-                    
                     }
                 } catch {
                     print("Something went wrong")
                 }
             })
-        task.resume()
+            task.resume()
+
+        }
+        handleURL(url: "http://www.anapioficeandfire.com/api/houses/229")
+        handleURL(url: "http://www.anapioficeandfire.com/api/houses/362")
+        handleURL(url: "http://www.anapioficeandfire.com/api/houses/398")
+        handleURL(url: "http://www.anapioficeandfire.com/api/houses/285")
+        handleURL(url: "http://www.anapioficeandfire.com/api/houses/169")
+        handleURL(url: "http://www.anapioficeandfire.com/api/houses/17")
+
+        print("Current houses: \(outHouses)")
+        completionHandler(outHouses)
     }
 }
