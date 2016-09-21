@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,14 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJL-xM-Y6v">
-                                <state key="normal" title="Enter"/>
-                                <connections>
-                                    <segue destination="rnG-Pa-FJZ" kind="show" identifier="toHome" id="FYX-5x-whq"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to the Game of Thrones Family Tree App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOz-y8-vC1">
-                                <frame key="frameInset" minX="60" minY="82" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOz-y8-vC1">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="dSf-en-dum"/>
                                 </constraints>
@@ -34,12 +28,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Game_of_Thrones_2011_logo.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="M75-6y-yef">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M75-6y-yef" secondAttribute="height" multiplier="15:8" id="OVQ-60-c4J"/>
+                                </constraints>
+                            </imageView>
+                            <button contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJL-xM-Y6v">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="qSd-Gn-6rk"/>
+                                    <constraint firstAttribute="width" constant="118" id="reR-1l-U9E"/>
+                                </constraints>
+                                <state key="normal" title="Begin" image="GameofThrones_byWar36.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rnG-Pa-FJZ" kind="show" identifier="toHome" id="FYX-5x-whq"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.7361871301775148" green="0.73263067061143994" blue="0.73974358974358978" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="nOz-y8-vC1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="3N9-hs-tR7"/>
+                            <constraint firstItem="M75-6y-yef" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GlA-Mu-Hvv"/>
                             <constraint firstItem="nOz-y8-vC1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ha9-hS-mWB"/>
-                            <constraint firstItem="VJL-xM-Y6v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fkd-lr-cpj"/>
+                            <constraint firstItem="M75-6y-yef" firstAttribute="top" secondItem="nOz-y8-vC1" secondAttribute="bottom" id="Svh-mj-DYV"/>
+                            <constraint firstItem="VJL-xM-Y6v" firstAttribute="top" secondItem="M75-6y-yef" secondAttribute="bottom" constant="-20" id="fSu-Ca-g9T"/>
                             <constraint firstItem="VJL-xM-Y6v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rGZ-ib-JEu"/>
                         </constraints>
                     </view>
@@ -61,14 +74,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7m-Ck-dVQ">
-                                <frame key="frameInset" minX="116" minY="72" width="89" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="game-of-thrones-houses.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gOn-OE-oOj">
+                                <frame key="frameInset" minX="26" minY="72" width="268" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="View Houses"/>
-                                <connections>
-                                    <segue destination="mbW-eE-M7N" kind="show" identifier="toHouses" id="zgN-0r-b5J"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PG6-ug-IpF">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w3f-aU-uU0">
@@ -127,29 +136,36 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dky-dI-Kao">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Mjo-Xo-Scm"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9Ks-k4-P6o">
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pah-9m-A9F">
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for your favorite character" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxa-Rh-Yzj">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7m-Ck-dVQ">
+                                <frame key="frameInset" minX="94" minY="121" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="View Houses">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mbW-eE-M7N" kind="show" identifier="toHouses" id="zgN-0r-b5J"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.73618713020000004" green="0.73263067059999998" blue="0.73974358969999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Pah-9m-A9F" firstAttribute="centerX" secondItem="uQJ-0i-RWW" secondAttribute="centerX" constant="-50" id="JRh-Cz-prt"/>
-                            <constraint firstItem="Pah-9m-A9F" firstAttribute="centerY" secondItem="uQJ-0i-RWW" secondAttribute="centerY" id="ccw-6W-JxN"/>
+                            <constraint firstItem="9Ks-k4-P6o" firstAttribute="top" secondItem="Dxa-Rh-Yzj" secondAttribute="bottom" symbolic="YES" id="3p0-7s-6yU"/>
+                            <constraint firstItem="9Ks-k4-P6o" firstAttribute="leading" secondItem="uQJ-0i-RWW" secondAttribute="leading" id="EU2-lu-SZ9"/>
+                            <constraint firstItem="Dxa-Rh-Yzj" firstAttribute="centerX" secondItem="uQJ-0i-RWW" secondAttribute="centerX" id="dDO-b9-cWh"/>
                             <constraint firstItem="PG6-ug-IpF" firstAttribute="leading" secondItem="uQJ-0i-RWW" secondAttribute="leadingMargin" id="dke-23-5Py"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PG6-ug-IpF" secondAttribute="trailing" id="ejj-8L-IMX"/>
-                            <constraint firstItem="dky-dI-Kao" firstAttribute="centerY" secondItem="uQJ-0i-RWW" secondAttribute="centerY" id="liI-nC-npe"/>
+                            <constraint firstItem="9Ks-k4-P6o" firstAttribute="centerY" secondItem="uQJ-0i-RWW" secondAttribute="centerY" id="lnP-R9-6Ze"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ks-k4-P6o" secondAttribute="trailing" id="rzw-x3-KDD"/>
                             <constraint firstItem="eet-AC-G1F" firstAttribute="top" secondItem="PG6-ug-IpF" secondAttribute="bottom" id="sWs-mH-dDZ"/>
-                            <constraint firstItem="dky-dI-Kao" firstAttribute="leading" secondItem="Pah-9m-A9F" secondAttribute="trailing" constant="8" symbolic="YES" id="slI-uE-UCj"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -161,7 +177,7 @@
         <scene sceneID="JpX-3u-unt">
             <objects>
                 <collectionViewController id="mbW-eE-M7N" customClass="HousesCollectionViewController" customModule="gameOfThronesTree" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="k8p-Fb-a8U">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="k8p-Fb-a8U">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -238,10 +254,32 @@
                     <view key="view" contentMode="scaleToFill" id="zHV-TT-djP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nu4-M8-svn">
+                                <frame key="frameInset" minY="72" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="NYW-oB-eCM" id="csr-sw-g28"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="L1n-FO-DUe" id="5mJ-5O-9Jh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JfU-ZF-lM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="L1n-FO-DUe">
+                    <connections>
+                        <outlet property="delegate" destination="NYW-oB-eCM" id="g6D-pX-Dzj"/>
+                        <outlet property="searchBar" destination="nu4-M8-svn" id="Ndw-TF-nfW"/>
+                        <outlet property="searchContentsController" destination="NYW-oB-eCM" id="ZkG-xo-GBJ"/>
+                        <outlet property="searchResultsDataSource" destination="NYW-oB-eCM" id="JVk-zE-Jje"/>
+                        <outlet property="searchResultsDelegate" destination="NYW-oB-eCM" id="oaa-sI-9gm"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="956" y="801"/>
         </scene>
@@ -264,4 +302,9 @@
             <point key="canvasLocation" x="-360" y="103.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Game_of_Thrones_2011_logo.svg.png" width="220" height="34"/>
+        <image name="GameofThrones_byWar36.png" width="534" height="600"/>
+        <image name="game-of-thrones-houses.jpg" width="640" height="438"/>
+    </resources>
 </document>
