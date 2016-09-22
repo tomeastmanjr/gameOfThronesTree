@@ -14,6 +14,10 @@ class HouseDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameLabel.text = house?.name
+        regionLabel.text = house?.region
+        coatOfArmsLabel.text = house?.coatOfArms
+        
 
         // Do any additional setup after loading the view.
     }
@@ -23,15 +27,11 @@ class HouseDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var regionLabel: UILabel!
+    @IBOutlet weak var coatOfArmsLabel: UILabel!
+    @IBOutlet weak var wordsLabel: UILabel!
+    @IBOutlet weak var ancestralWeaponsLabel: UILabel!
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

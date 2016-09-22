@@ -162,7 +162,7 @@
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mbW-eE-M7N" kind="show" identifier="toHouses" id="zgN-0r-b5J"/>
+                                    <segue destination="9v8-n3-AUK" kind="show" id="h70-er-jCU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -190,62 +190,115 @@
             </objects>
             <point key="canvasLocation" x="956.25" y="107.5"/>
         </scene>
-        <!--Houses Collection View Controller-->
-        <scene sceneID="JpX-3u-unt">
+        <!--Character Details View Controller-->
+        <scene sceneID="WRx-9g-sJn">
             <objects>
-                <collectionViewController id="mbW-eE-M7N" customClass="HousesCollectionViewController" customModule="gameOfThronesTree" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="k8p-Fb-a8U">
+                <viewController id="0FY-lR-bcg" customClass="CharacterDetailsViewController" customModule="gameOfThronesTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S0c-ow-Woc"/>
+                        <viewControllerLayoutGuide type="bottom" id="VlQ-wU-YzQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F9k-Hg-z2S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lha-Xa-bpJ">
-                            <size key="itemSize" width="181" height="181"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="houseCell" id="OP0-Gs-6tv" customClass="HouseCell" customModule="gameOfThronesTree" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="181" height="181"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultHouse" translatesAutoresizingMaskIntoConstraints="NO" id="9p6-vb-rDJ" userLabel="houseImage"/>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OF0-es-Wzw" userLabel="houseLabel">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="9p6-vb-rDJ" secondAttribute="trailing" id="7KL-Ru-VJM"/>
-                                    <constraint firstAttribute="bottom" secondItem="9p6-vb-rDJ" secondAttribute="bottom" id="8Gj-88-kRB"/>
-                                    <constraint firstItem="OF0-es-Wzw" firstAttribute="bottom" secondItem="OP0-Gs-6tv" secondAttribute="bottomMargin" constant="-144" id="EI0-2V-l7Y"/>
-                                    <constraint firstItem="9p6-vb-rDJ" firstAttribute="top" secondItem="OP0-Gs-6tv" secondAttribute="top" id="nZr-uA-LV1"/>
-                                    <constraint firstItem="OF0-es-Wzw" firstAttribute="leading" secondItem="OP0-Gs-6tv" secondAttribute="leadingMargin" constant="57" id="qq8-FC-KXi"/>
-                                    <constraint firstItem="9p6-vb-rDJ" firstAttribute="leading" secondItem="OP0-Gs-6tv" secondAttribute="leading" id="sm3-b2-Zyh"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="houseImageView" destination="9p6-vb-rDJ" id="Imd-BZ-CAr"/>
-                                    <outlet property="houseLabel" destination="OF0-es-Wzw" id="SDT-gA-Kgw"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="mbW-eE-M7N" id="3Xz-xa-kuh"/>
-                            <outlet property="delegate" destination="mbW-eE-M7N" id="b4Q-JK-RKZ"/>
-                        </connections>
-                    </collectionView>
-                    <connections>
-                        <segue destination="ftB-As-sBt" kind="show" identifier="toHouseDetails" id="ai2-9q-VeT"/>
-                    </connections>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cCI-gm-244" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQO-2p-d0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1661.5999999999999" y="-66.11694152923539"/>
+            <point key="canvasLocation" x="1543" y="1078"/>
+        </scene>
+        <!--Houses View Controller-->
+        <scene sceneID="HYe-OA-mdr">
+            <objects>
+                <viewController id="9v8-n3-AUK" customClass="HousesViewController" customModule="gameOfThronesTree" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Rk-Sw-UaH"/>
+                        <viewControllerLayoutGuide type="bottom" id="axq-L1-bGw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qI8-IG-HZW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hr6-Z9-ZQk">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMT-ji-q2U" userLabel="ContainerView">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="houses" translatesAutoresizingMaskIntoConstraints="NO" id="DTt-f2-ZCd"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pzO-Uy-fpo">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qf-YW-OUy" userLabel="Lannister">
+                                                        <connections>
+                                                            <action selector="lannisterButtonPressed:" destination="9v8-n3-AUK" eventType="touchUpInside" id="d8q-Fo-Jul"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjE-Bv-QHk" userLabel="Stark">
+                                                        <connections>
+                                                            <action selector="starkButtonPressed:" destination="9v8-n3-AUK" eventType="touchUpInside" id="Rvi-l4-eIr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgz-rs-h95" userLabel="Tyrell">
+                                                        <connections>
+                                                            <action selector="tyrellButtonPressed:" destination="9v8-n3-AUK" eventType="touchUpInside" id="Whq-ts-2fq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roA-y6-knR" userLabel="Martell">
+                                                        <connections>
+                                                            <action selector="martellButtonPressed:" destination="9v8-n3-AUK" eventType="touchUpInside" id="LGW-62-rSP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcN-JR-vTn" userLabel="GreyJoy">
+                                                        <connections>
+                                                            <action selector="greyjoyButtonPressed:" destination="9v8-n3-AUK" eventType="touchUpInside" id="Q5V-t3-HpK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRI-cM-Zj0" userLabel="Baratheon">
+                                                        <connections>
+                                                            <action selector="baratheonButtonPressed:" destination="9v8-n3-AUK" eventType="touchUpInside" id="B2J-JJ-AvG"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="pzO-Uy-fpo" firstAttribute="width" secondItem="DTt-f2-ZCd" secondAttribute="width" id="02S-vn-9Aw"/>
+                                            <constraint firstItem="DTt-f2-ZCd" firstAttribute="top" secondItem="tMT-ji-q2U" secondAttribute="top" id="1Ew-fg-5TM"/>
+                                            <constraint firstItem="pzO-Uy-fpo" firstAttribute="height" secondItem="DTt-f2-ZCd" secondAttribute="height" id="G50-XR-4Tk"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1000" id="QJi-61-Jnf"/>
+                                            <constraint firstAttribute="trailing" secondItem="DTt-f2-ZCd" secondAttribute="trailing" id="SFy-qR-IkD"/>
+                                            <constraint firstItem="pzO-Uy-fpo" firstAttribute="centerY" secondItem="DTt-f2-ZCd" secondAttribute="centerY" id="a4d-sZ-LNY"/>
+                                            <constraint firstItem="pzO-Uy-fpo" firstAttribute="centerX" secondItem="DTt-f2-ZCd" secondAttribute="centerX" id="py2-CJ-p4R"/>
+                                            <constraint firstItem="DTt-f2-ZCd" firstAttribute="leading" secondItem="tMT-ji-q2U" secondAttribute="leading" id="tCb-IB-RYN"/>
+                                            <constraint firstAttribute="bottom" secondItem="DTt-f2-ZCd" secondAttribute="bottom" id="wON-Ij-V9s"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tMT-ji-q2U" secondAttribute="trailing" id="IDw-a4-fEt"/>
+                                    <constraint firstItem="tMT-ji-q2U" firstAttribute="top" secondItem="Hr6-Z9-ZQk" secondAttribute="top" id="Nah-a6-hgq"/>
+                                    <constraint firstItem="tMT-ji-q2U" firstAttribute="centerX" secondItem="Hr6-Z9-ZQk" secondAttribute="centerX" id="UdS-XL-nwM"/>
+                                    <constraint firstAttribute="bottom" secondItem="tMT-ji-q2U" secondAttribute="bottom" id="nKl-Jn-XwX"/>
+                                    <constraint firstItem="tMT-ji-q2U" firstAttribute="leading" secondItem="Hr6-Z9-ZQk" secondAttribute="leading" id="oL6-Ez-CGO"/>
+                                    <constraint firstItem="tMT-ji-q2U" firstAttribute="centerY" secondItem="Hr6-Z9-ZQk" secondAttribute="centerY" id="piC-LW-1By"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hr6-Z9-ZQk" firstAttribute="centerY" secondItem="qI8-IG-HZW" secondAttribute="centerY" constant="32" id="7ND-xw-v4r"/>
+                            <constraint firstItem="Hr6-Z9-ZQk" firstAttribute="height" secondItem="qI8-IG-HZW" secondAttribute="height" constant="-64" id="Olc-EW-9TK"/>
+                            <constraint firstItem="Hr6-Z9-ZQk" firstAttribute="width" secondItem="qI8-IG-HZW" secondAttribute="width" constant="-32" id="eaO-67-kLh"/>
+                            <constraint firstItem="Hr6-Z9-ZQk" firstAttribute="centerX" secondItem="qI8-IG-HZW" secondAttribute="centerX" id="fiJ-Fv-xcs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="ftB-As-sBt" kind="show" identifier="toHouseDetails" id="Rgb-2r-6qi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3f-g9-X5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750.5" y="-66.5"/>
         </scene>
         <!--House Details View Controller-->
         <scene sceneID="mKz-ol-q4E">
@@ -293,10 +346,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" id="QgM-6v-7cI">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="1000" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QgM-6v-7cI" id="XEr-J7-fo6">
-                                            <frame key="frameInset" width="343" height="43"/>
+                                            <frame key="frameInset" width="1000" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cR-v1-IoA">
@@ -341,6 +394,13 @@
                             <constraint firstItem="3io-8v-pgQ" firstAttribute="trailing" secondItem="3h7-Vi-GAN" secondAttribute="trailing" id="vEu-4K-v46"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ancestralWeaponsLabel" destination="zgd-Yp-EoL" id="VV7-Y3-DcG"/>
+                        <outlet property="coatOfArmsLabel" destination="3io-8v-pgQ" id="SvG-eF-czq"/>
+                        <outlet property="nameLabel" destination="PeQ-jq-EhD" id="7hM-x3-25n"/>
+                        <outlet property="regionLabel" destination="oHu-XB-Hj1" id="w5a-Kb-R8P"/>
+                        <outlet property="wordsLabel" destination="3h7-Vi-GAN" id="ZhS-zX-5mA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2A-ip-SwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -377,7 +437,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y8y-h6-mxc" id="wb3-XY-kyL">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -415,7 +475,7 @@
     <resources>
         <image name="Game_of_Thrones_2011_logo.svg.png" width="220" height="34"/>
         <image name="GameofThrones_byWar36.png" width="534" height="600"/>
-        <image name="defaultHouse" width="312" height="329"/>
         <image name="game-of-thrones-houses.jpg" width="640" height="438"/>
+        <image name="houses" width="310" height="746"/>
     </resources>
 </document>

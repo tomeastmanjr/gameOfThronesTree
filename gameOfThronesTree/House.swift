@@ -36,15 +36,15 @@ class House {
     
     static func getAllHouses(completionHandler : @escaping (_ houses : [House]) -> () ){
         var outHouses = [House]()
-            print("executing JSON requests")
-            let url = NSURL(string: "http://www.anapioficeandfire.com/api/houses")
-            let session = URLSession.shared // Create an NSURLSession to handle the request tasks
-            let task = session.dataTask(with: url! as URL, completionHandler: {//request data from a URL, requires a completion handler
+        let requestedHouses = [229,362,398,285,169,17]
+        var i = 0
+        func handleJSONGet(stringUrl: String!) {
+            let url = NSURL(string: stringUrl)
+            let session = URLSession.shared
+            let task = session.dataTask(with: url! as URL, completionHandler: {
                 data, response, error in
                 do {
-                    if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray {
-                        for i in 0 ..< (jsonResult.count) { // now we can run NSArray methods like .count
-                            let houseDictionary = jsonResult.object(at: i) as! NSDictionary
+                    if let houseDictionary = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
                             let name = houseDictionary["name"] as? String
                             let region = houseDictionary["region"] as? String
                             let coatOfArms = houseDictionary["coatOfArms"] as? String
@@ -54,15 +54,22 @@ class House {
                             let h = House(name: name!, region: region!, coatOfArms: coatOfArms!, words: words!, ancestralWeapons: ancestralWeapons!, swornMembers: swornMembers!)
                             print("Appending house: \(h.name)")
                             outHouses.append(h)
+                        if i == requestedHouses.count-1 {
+                            print("Current houses: \(outHouses)")
+                            completionHandler(outHouses)
+                        } else {
+                            i += 1
                         }
-                        print("Current houses: \(outHouses)")
-                        completionHandler(outHouses)
-                    
                     }
+                    //Put any recursive calls to handelJSONResponse here (i.e. follow-on links)
                 } catch {
-                    print("Something went wrong")
+                    print("something went wrong")
                 }
             })
-        task.resume()
+            task.resume()
+        }
+        for i in 0 ..< requestedHouses.count {
+            handleJSONGet(stringUrl: "http://www.anapioficeandfire.com/api/houses/\(requestedHouses[i])")
+        }
     }
 }

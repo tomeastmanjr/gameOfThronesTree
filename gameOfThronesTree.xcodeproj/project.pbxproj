@@ -18,7 +18,7 @@
 		C115740E1D92FB9700904B52 /* gameOfThronesTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115740D1D92FB9700904B52 /* gameOfThronesTreeTests.swift */; };
 		C11574191D92FB9700904B52 /* gameOfThronesTreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11574181D92FB9700904B52 /* gameOfThronesTreeUITests.swift */; };
 		C11574271D92FE7100904B52 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11574261D92FE7100904B52 /* IntroViewController.swift */; };
-		C11574291D92FF0700904B52 /* HousesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11574281D92FF0700904B52 /* HousesCollectionViewController.swift */; };
+		C11574291D92FF0700904B52 /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11574281D92FF0700904B52 /* HousesViewController.swift */; };
 		C115742B1D92FF5C00904B52 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115742A1D92FF5C00904B52 /* CharacterDetailsViewController.swift */; };
 		C115742D1D92FFCB00904B52 /* AdvancedSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115742C1D92FFCB00904B52 /* AdvancedSearchViewController.swift */; };
 		C115742F1D93002700904B52 /* HouseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115742E1D93002700904B52 /* HouseDetailsViewController.swift */; };
@@ -66,7 +66,7 @@
 		C11574181D92FB9700904B52 /* gameOfThronesTreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameOfThronesTreeUITests.swift; sourceTree = "<group>"; };
 		C115741A1D92FB9700904B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C11574261D92FE7100904B52 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		C11574281D92FF0700904B52 /* HousesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesCollectionViewController.swift; sourceTree = "<group>"; };
+		C11574281D92FF0700904B52 /* HousesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
 		C115742A1D92FF5C00904B52 /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		C115742C1D92FFCB00904B52 /* AdvancedSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedSearchViewController.swift; sourceTree = "<group>"; };
 		C115742E1D93002700904B52 /* HouseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseDetailsViewController.swift; sourceTree = "<group>"; };
@@ -135,10 +135,12 @@
 				C11574321D932BAF00904B52 /* Game_of_Thrones_title_card_med.jpg */,
 				C11574331D932BAF00904B52 /* Game_of_Thrones_title_card_small.jpg */,
 				C11574341D932BAF00904B52 /* GameofThrones_byWar36.png */,
+
+				C11574301D93287900904B52 /* Game_of_Thrones_2011_logo.svg.png */,
 				C115742C1D92FFCB00904B52 /* AdvancedSearchViewController.swift */,
 				C115742A1D92FF5C00904B52 /* CharacterDetailsViewController.swift */,
 				C11574261D92FE7100904B52 /* IntroViewController.swift */,
-				C11574281D92FF0700904B52 /* HousesCollectionViewController.swift */,
+				C11574281D92FF0700904B52 /* HousesViewController.swift */,
 				C115742E1D93002700904B52 /* HouseDetailsViewController.swift */,
 				72260C291D931FBA00943C93 /* House.swift */,
 				C11573FF1D92FB9700904B52 /* Assets.xcassets */,
@@ -316,7 +318,7 @@
 				C115742F1D93002700904B52 /* HouseDetailsViewController.swift in Sources */,
 				C115742D1D92FFCB00904B52 /* AdvancedSearchViewController.swift in Sources */,
 				C11573F81D92FB9700904B52 /* HomeViewController.swift in Sources */,
-				C11574291D92FF0700904B52 /* HousesCollectionViewController.swift in Sources */,
+				C11574291D92FF0700904B52 /* HousesViewController.swift in Sources */,
 				72260C2A1D931FBA00943C93 /* House.swift in Sources */,
 				C11573F61D92FB9700904B52 /* AppDelegate.swift in Sources */,
 				C11573FE1D92FB9700904B52 /* gameOfThronesTree.xcdatamodeld in Sources */,
