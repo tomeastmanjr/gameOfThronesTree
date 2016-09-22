@@ -13,13 +13,14 @@ private let reuseIdentifier = "houseCell"
 class HousesViewController: UIViewController {
     var houses = [House]()
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         House.getAllHouses{(houses : [House]) in
             self.houses = houses
         }
+    
         //print("The first house is \(houses[0].name)")
-
     }
 
     override func didReceiveMemoryWarning() {

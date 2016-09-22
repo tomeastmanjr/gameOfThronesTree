@@ -55,10 +55,11 @@ class House {
                             print("Appending house: \(h.name)")
                             outHouses.append(h)
                         if i == requestedHouses.count-1 {
-                            print("Current houses: \(outHouses)")
-                            completionHandler(outHouses)
+                            completionHandler(outHouses) //Note completion handler MUST be handled in recurisive call (otherwise you risk calling it BEFORE outHouses is populated
                         } else {
                             i += 1
+                            handleJSONGet(stringUrl: "http://www.anapioficeandfire.com/api/houses/\(requestedHouses[i])")
+                            
                         }
                     }
                     //Put any recursive calls to handelJSONResponse here (i.e. follow-on links)
@@ -68,8 +69,6 @@ class House {
             })
             task.resume()
         }
-        for i in 0 ..< requestedHouses.count {
-            handleJSONGet(stringUrl: "http://www.anapioficeandfire.com/api/houses/\(requestedHouses[i])")
-        }
+        handleJSONGet(stringUrl: "http://www.anapioficeandfire.com/api/houses/\(requestedHouses[i])") //must use recursion if you want it to wait for the previous call to finish
     }
 }

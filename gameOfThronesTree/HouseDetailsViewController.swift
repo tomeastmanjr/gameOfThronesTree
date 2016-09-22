@@ -17,6 +17,15 @@ class HouseDetailsViewController: UIViewController {
         nameLabel.text = house?.name
         regionLabel.text = house?.region
         coatOfArmsLabel.text = house?.coatOfArms
+        wordsLabel.text = house?.words
+        if house?.ancestralWeapons?.count == 0 {
+            ancestralWeaponsLabel.text?.append(" None listed")
+        } else {
+            for weapon in (house?.ancestralWeapons)! {
+                ancestralWeaponsLabel.text?.append(" \(weapon!) ")
+            }
+        }
+        
         
 
         // Do any additional setup after loading the view.
